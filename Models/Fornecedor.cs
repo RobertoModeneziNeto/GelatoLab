@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GelatoLab.Models
 {
-    internal class Fornecedor
+    public class Fornecedor
     {
     }
 }
