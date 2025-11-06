@@ -14,5 +14,6 @@ namespace GelatoLab.Models
         public Produtos Produto { get; set; }
         public int Quantidade { get; set; }
         public string Observacao { get; set; }
+
     }
 }
