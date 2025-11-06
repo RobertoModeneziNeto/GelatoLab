@@ -55,6 +55,7 @@
     <Compile Include="Models\Categoria.cs" />
     <Compile Include="Models\Produtos.cs" />
     <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Fornecedor.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
