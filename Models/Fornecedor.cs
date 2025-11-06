@@ -8,7 +8,7 @@ namespace GelatoLab.Models
 {
     public class Fornecedor
     {
-        public int Id { get; set; }
+        public int IdFornecedor { get; set; }
         public string Nome { get; set; }
         public string Cnpj { get; set; }
         public string Telefone { get; set; }

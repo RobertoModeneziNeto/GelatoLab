@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GelatoLab.Models
 {
-    internal class Usuario
+    public class Usuario
     {
 
         public int IdUsuario { get; set; }
