@@ -8,5 +8,7 @@ namespace GelatoLab.Models
 {
     internal class Usuario
     {
+
+
     }
 }
