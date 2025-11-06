@@ -13,6 +13,6 @@ namespace GelatoLab.Models
         public string Cnpj { get; set; }
         public string Telefone { get; set; }
         public string Email { get; set; }
-        public string Phone { get; set; }
+
     }
 }
