@@ -17,6 +17,8 @@ namespace GelatoLab.Models
 
         public string codBarras { get; set; }
 
+        public string TipoUnidade { get; set; }
+
         public Categoria Categoria { get; set; }
 
         public Fornecedor Fornecedor { get; set; }
