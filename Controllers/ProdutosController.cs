@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace GelatoLab.Controllers
 {
-    public class ProdutoController
+    public class ProdutosController
     {
         // Conexão com o banco de dados
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
