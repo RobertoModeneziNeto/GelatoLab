@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Controllers\CategoriaController.cs" />
     <Compile Include="Controllers\FornecedorController.cs" />
+    <Compile Include="Controllers\MovimentacoesController.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
     <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="Form1.cs">
