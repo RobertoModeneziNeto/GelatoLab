@@ -22,4 +22,6 @@ namespace GelatoLab.Models
         public Fornecedor Fornecedor { get; set; }
 
     }
+
+    public class ProdutosCollection : List<Produtos> { }
 }

@@ -14,4 +14,6 @@ namespace GelatoLab.Models
         public string Senha { get; set; }
         public string Tipo { get; set; }
     }
+
+    public class UsuarioCollection : List<Usuario> { }
 }

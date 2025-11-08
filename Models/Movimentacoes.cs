@@ -16,4 +16,6 @@ namespace GelatoLab.Models
         public string Observacao { get; set; }
 
     }
+
+    public class MovimentacoesCollection : List<Movimentacoes> { }
 }

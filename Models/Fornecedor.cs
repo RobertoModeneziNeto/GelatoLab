@@ -15,4 +15,6 @@ namespace GelatoLab.Models
         public string Email { get; set; }
 
     }
+
+    public class FornecedorCollection : List<Fornecedor> { }
 }
