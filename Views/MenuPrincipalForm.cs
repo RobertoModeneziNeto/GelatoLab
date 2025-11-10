@@ -103,5 +103,11 @@ namespace GelatoLab.Views
             UsuarioCadastroForm tela = new UsuarioCadastroForm();
             tela.ShowDialog();
         }
+
+        private void menuItemConsultaUsuarios_Click(object sender, EventArgs e)
+        {
+            UsuarioConsultaForm tela = new UsuarioConsultaForm();
+            tela.ShowDialog();
+        }
     }
 }

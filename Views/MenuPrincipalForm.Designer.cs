@@ -144,6 +144,7 @@
             this.menuItemConsultaUsuarios.Name = "menuItemConsultaUsuarios";
             this.menuItemConsultaUsuarios.Size = new System.Drawing.Size(258, 26);
             this.menuItemConsultaUsuarios.Text = "Consulta Usuarios";
+            this.menuItemConsultaUsuarios.Click += new System.EventHandler(this.menuItemConsultaUsuarios_Click);
             // 
             // menuItemConsultaProdutos
             // 
