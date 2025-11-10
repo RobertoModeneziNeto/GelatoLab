@@ -129,6 +129,7 @@
             this.menuItemCategorias.Name = "menuItemCategorias";
             this.menuItemCategorias.Size = new System.Drawing.Size(224, 26);
             this.menuItemCategorias.Text = "Categorias";
+            this.menuItemCategorias.Click += new System.EventHandler(this.menuItemCategorias_Click);
             // 
             // menuItemFornecedores
             // 
@@ -159,6 +160,7 @@
             this.menuItemConsultaCategorias.Name = "menuItemConsultaCategorias";
             this.menuItemConsultaCategorias.Size = new System.Drawing.Size(258, 26);
             this.menuItemConsultaCategorias.Text = "Consulta Categorias";
+            this.menuItemConsultaCategorias.Click += new System.EventHandler(this.menuItemConsultaCategorias_Click);
             // 
             // menuItemConsultaFornecedores
             // 

@@ -20,8 +20,41 @@ namespace GelatoLab.Views
             usuarioLogado = usuario;
 
             lblUsuarioLogado.Text = usuario.Nome;
+            lblUsuarioLogado.Text = "Usuário: " + usuario.Nome;
+
+            AplicarPermissoes();
         }
 
+        // ============================================================
+        // Controle de Permissões Admin / Funcionário
+        // ============================================================
+        private void AplicarPermissoes()
+        {
+            if (usuarioLogado.Tipo == "Funcionario")
+            {
+                menuItemUsuarios.Enabled = false;      // Cadastro de usuários
+                menuItemCategorias.Enabled = true;
+                menuItemFornecedores.Enabled = true;
+                menuItemProdutos.Enabled = true;
 
+                // Funcionário pode fazer movimentações normalmente
+            }
+            else if (usuarioLogado.Tipo == "Admin")
+            {
+                // Admin tem tudo liberado
+            }
+        }
+
+        private void menuItemCategorias_Click(object sender, EventArgs e)
+        {
+            CategoriaCadastroForm tela = new CategoriaCadastroForm();
+            tela.ShowDialog();
+        }
+
+        private void menuItemConsultaCategorias_Click(object sender, EventArgs e)
+        {
+            CategoriaConsultaForm tela = new CategoriaConsultaForm();
+            tela.ShowDialog();
+        }
     }
 }
