@@ -41,7 +41,7 @@ namespace GelatoLab.Controllers
                 "Login = @Login, " +
                 "Senha = @Senha, " +
                 "Tipo = @Tipo " +
-                "WHERE Id = @Id";
+                "WHERE IdUsuario = @Id";
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@Nome", usuario.Nome);
@@ -58,7 +58,7 @@ namespace GelatoLab.Controllers
         // ============================================================
         public int Excluir(int id)
         {
-            string query = "DELETE FROM Usuario WHERE Id = @Id";
+            string query = "DELETE FROM Usuario WHERE IdUsuario = @Id";
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@Id", id);
@@ -72,7 +72,7 @@ namespace GelatoLab.Controllers
         public Usuario GetById(int id)
         {
             string query =
-                "SELECT * FROM Usuario WHERE Id = @Id";
+                "SELECT * FROM Usuario WHERE IdUsuario = @Id";
 
             SqlCommand command = new SqlCommand(query);
             command.Parameters.AddWithValue("@Id", id);
@@ -83,7 +83,7 @@ namespace GelatoLab.Controllers
                 return null;
 
             Usuario usuario = new Usuario();
-            usuario.IdUsuario = (int)dt.Rows[0]["Id"];
+            usuario.IdUsuario = (int)dt.Rows[0]["IdUsuario"];
             usuario.Nome = (string)dt.Rows[0]["Nome"];
             usuario.Login = (string)dt.Rows[0]["Login"];
             usuario.Senha = (string)dt.Rows[0]["Senha"];
@@ -122,7 +122,7 @@ namespace GelatoLab.Controllers
             {
                 Usuario usuario = new Usuario();
 
-                usuario.IdUsuario = (int)row["Id"];
+                usuario.IdUsuario = (int)row["IdUsuario"];
                 usuario.Nome = (string)row["Nome"];
                 usuario.Login = (string)row["Login"];
                 usuario.Senha = (string)row["Senha"];
