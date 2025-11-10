@@ -101,6 +101,12 @@
     <Compile Include="Views\MenuPrincipalForm.Designer.cs">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\MovimentacaoConsultaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MovimentacaoConsultaForm.Designer.cs">
+      <DependentUpon>MovimentacaoConsultaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\MovimentacaoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MenuPrincipalForm.resx">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MovimentacaoConsultaForm.resx">
+      <DependentUpon>MovimentacaoConsultaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MovimentacaoForm.resx">
       <DependentUpon>MovimentacaoForm.cs</DependentUpon>
