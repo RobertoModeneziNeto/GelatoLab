@@ -142,6 +142,7 @@
             this.menuItemSair.Name = "menuItemSair";
             this.menuItemSair.Size = new System.Drawing.Size(224, 26);
             this.menuItemSair.Text = "Sair";
+            this.menuItemSair.Click += new System.EventHandler(this.menuItemSair_Click);
             // 
             // menuItemConsultaUsuarios
             // 

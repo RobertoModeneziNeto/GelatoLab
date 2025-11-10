@@ -22,7 +22,7 @@ namespace GelatoLab.Services
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
             connection.ConnectionString =
                 "Data Source=DESKTOP-64RILEV\\SQLEXPRESS;" + //Nome do Servidor (RAPAZIADA MUDAR O NOME DO SERVIDOR AQUI)
-                "Initial Catalog=GelatoSql;" + //Nome do Banco
+                "Initial Catalog=GelatoLab;" + //Nome do Banco
                 "Integrated Security=SSPI;";// Autenticação pelo Windows
 
             //Abrir a conexão com o banco

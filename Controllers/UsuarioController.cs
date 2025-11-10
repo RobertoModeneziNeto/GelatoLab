@@ -169,7 +169,7 @@ namespace GelatoLab.Controllers
 
             Usuario usuario = new Usuario();
 
-            usuario.IdUsuario = (int)dt.Rows[0]["Id"];
+            usuario.IdUsuario = (int)dt.Rows[0]["IdUsuario"];
             usuario.Nome = (string)dt.Rows[0]["Nome"];
             usuario.Login = (string)dt.Rows[0]["Login"];
             usuario.Senha = (string)dt.Rows[0]["Senha"];

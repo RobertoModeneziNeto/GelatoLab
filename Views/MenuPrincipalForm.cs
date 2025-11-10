@@ -56,5 +56,10 @@ namespace GelatoLab.Views
             CategoriaConsultaForm tela = new CategoriaConsultaForm();
             tela.ShowDialog();
         }
+
+        private void menuItemSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
