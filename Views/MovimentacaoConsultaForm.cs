@@ -96,5 +96,17 @@ namespace GelatoLab.Views
         {
             this.Close();
         }
+
+        private void dgvMovimentacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0)
+                return;
+
+            int idMov = (int)dgvMovimentacoes.Rows[e.RowIndex].Cells["IdMovimentacao"].Value;
+
+            MovimentacaoDetalheForm tela = new MovimentacaoDetalheForm();
+            tela.CarregarMovimentacao(idMov);
+            tela.ShowDialog();
+        }
     }
 }

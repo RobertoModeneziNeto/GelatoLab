@@ -134,6 +134,7 @@
             this.dgvMovimentacoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMovimentacoes.Size = new System.Drawing.Size(666, 254);
             this.dgvMovimentacoes.TabIndex = 11;
+            this.dgvMovimentacoes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMovimentacoes_CellDoubleClick);
             // 
             // MovimentacaoConsultaForm
             // 
