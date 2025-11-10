@@ -123,6 +123,7 @@
             this.menuItemProdutos.Name = "menuItemProdutos";
             this.menuItemProdutos.Size = new System.Drawing.Size(224, 26);
             this.menuItemProdutos.Text = "Produtos";
+            this.menuItemProdutos.Click += new System.EventHandler(this.menuItemProdutos_Click);
             // 
             // menuItemCategorias
             // 
@@ -156,6 +157,7 @@
             this.menuItemConsultaProdutos.Name = "menuItemConsultaProdutos";
             this.menuItemConsultaProdutos.Size = new System.Drawing.Size(258, 26);
             this.menuItemConsultaProdutos.Text = "Consulta Produtos";
+            this.menuItemConsultaProdutos.Click += new System.EventHandler(this.menuItemConsultaProdutos_Click);
             // 
             // menuItemConsultaCategorias
             // 
