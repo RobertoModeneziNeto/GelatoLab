@@ -77,6 +77,18 @@
     <Compile Include="Views\CategoriaConsultaForm.Designer.cs">
       <DependentUpon>CategoriaConsultaForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FornecedorCadastroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FornecedorCadastroForm.Designer.cs">
+      <DependentUpon>FornecedorCadastroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FornecedorConsultaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FornecedorConsultaForm.Designer.cs">
+      <DependentUpon>FornecedorConsultaForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +115,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\CategoriaConsultaForm.resx">
       <DependentUpon>CategoriaConsultaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FornecedorCadastroForm.resx">
+      <DependentUpon>FornecedorCadastroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FornecedorConsultaForm.resx">
+      <DependentUpon>FornecedorConsultaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

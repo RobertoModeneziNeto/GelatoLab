@@ -32,7 +32,7 @@ namespace GelatoLab.Views
             Fornecedor fornecedor = new Fornecedor();
 
             fornecedor.Nome = txtNome.Text.Trim();
-            fornecedor.Cnpj = txtCnpj.Text.Trim();
+            fornecedor.Cnpj = txtCnpj2.Text.Trim();
             fornecedor.Telefone = txtTelefone.Text.Trim();
             fornecedor.Email = txtEmail.Text.Trim();
 
@@ -79,6 +79,25 @@ namespace GelatoLab.Views
             txtCnpj2.Clear();
             txtTelefone.Clear();
             txtEmail.Clear();
+        }
+
+        public void CarregarFornecedor(int id)
+        {
+            Fornecedor fornecedor = controller.GetById(id);
+
+            if (fornecedor != null)
+            {
+                txtId.Text = fornecedor.IdFornecedor.ToString();
+                txtNome.Text = fornecedor.Nome;
+                txtCnpj2.Text = fornecedor.Cnpj;
+                txtTelefone.Text = fornecedor.Telefone;
+                txtEmail.Text = fornecedor.Email;
+            }
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
