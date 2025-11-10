@@ -170,6 +170,7 @@
             this.menuItemConsultaMovimentacoes.Name = "menuItemConsultaMovimentacoes";
             this.menuItemConsultaMovimentacoes.Size = new System.Drawing.Size(258, 26);
             this.menuItemConsultaMovimentacoes.Text = "Consulta Movimentacoes";
+            this.menuItemConsultaMovimentacoes.Click += new System.EventHandler(this.menuItemConsultaMovimentacoes_Click);
             // 
             // sistemaToolStripMenuItem
             // 
