@@ -136,14 +136,14 @@
             this.lblTipo.AutoSize = true;
             this.lblTipo.Location = new System.Drawing.Point(269, 52);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(116, 16);
+            this.lblTipo.Size = new System.Drawing.Size(38, 16);
             this.lblTipo.TabIndex = 10;
-            this.lblTipo.Text = "Código de Barras:";
+            this.lblTipo.Text = "Tipo:";
             // 
             // cbTipoUnidade
             // 
             this.cbTipoUnidade.FormattingEnabled = true;
-            this.cbTipoUnidade.Location = new System.Drawing.Point(391, 47);
+            this.cbTipoUnidade.Location = new System.Drawing.Point(313, 49);
             this.cbTipoUnidade.Name = "cbTipoUnidade";
             this.cbTipoUnidade.Size = new System.Drawing.Size(121, 24);
             this.cbTipoUnidade.TabIndex = 11;
