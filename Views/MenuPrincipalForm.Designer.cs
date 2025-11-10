@@ -87,8 +87,9 @@
             // menuItemUsuarios
             // 
             this.menuItemUsuarios.Name = "menuItemUsuarios";
-            this.menuItemUsuarios.Size = new System.Drawing.Size(181, 26);
+            this.menuItemUsuarios.Size = new System.Drawing.Size(224, 26);
             this.menuItemUsuarios.Text = "Usuarios";
+            this.menuItemUsuarios.Click += new System.EventHandler(this.menuItemUsuarios_Click);
             // 
             // menuItemProdutos
             // 
