@@ -85,5 +85,11 @@ namespace GelatoLab.Views
             ProdutoConsultaForm tela = new ProdutoConsultaForm();
             tela.ShowDialog();
         }
+
+        private void menuItemMovimentacao_Click(object sender, EventArgs e)
+        {
+            MovimentacaoForm tela = new MovimentacaoForm();
+            tela.ShowDialog();
+        }
     }
 }
