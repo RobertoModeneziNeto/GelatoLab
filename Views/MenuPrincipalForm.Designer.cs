@@ -69,7 +69,7 @@
             this.desenvolvedoresToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -81,7 +81,7 @@
             this.menuItemCategorias,
             this.menuItemFornecedores});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(88, 26);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
             // 
             // movimentaçõesToolStripMenuItem
@@ -101,7 +101,7 @@
             this.menuItemConsultaFornecedores,
             this.menuItemConsultaMovimentacoes});
             this.consultasToolStripMenuItem.Name = "consultasToolStripMenuItem";
-            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.consultasToolStripMenuItem.Size = new System.Drawing.Size(86, 26);
             this.consultasToolStripMenuItem.Text = "Consultas";
             // 
             // sistemaToolStripMenuItem
@@ -136,6 +136,7 @@
             this.menuItemFornecedores.Name = "menuItemFornecedores";
             this.menuItemFornecedores.Size = new System.Drawing.Size(224, 26);
             this.menuItemFornecedores.Text = "Fornecedores";
+            this.menuItemFornecedores.Click += new System.EventHandler(this.menuItemFornecedores_Click);
             // 
             // menuItemSair
             // 
@@ -168,6 +169,7 @@
             this.menuItemConsultaFornecedores.Name = "menuItemConsultaFornecedores";
             this.menuItemConsultaFornecedores.Size = new System.Drawing.Size(258, 26);
             this.menuItemConsultaFornecedores.Text = "Consulta Fornecedores";
+            this.menuItemConsultaFornecedores.Click += new System.EventHandler(this.menuItemConsultaFornecedores_Click);
             // 
             // menuItemConsultaMovimentacoes
             // 
