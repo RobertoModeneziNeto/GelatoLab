@@ -101,6 +101,18 @@
     <Compile Include="Views\MenuPrincipalForm.Designer.cs">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\ProdutoCadastroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProdutoCadastroForm.Designer.cs">
+      <DependentUpon>ProdutoCadastroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProdutoConsultaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ProdutoConsultaForm.Designer.cs">
+      <DependentUpon>ProdutoConsultaForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -127,6 +139,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\MenuPrincipalForm.resx">
       <DependentUpon>MenuPrincipalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProdutoCadastroForm.resx">
+      <DependentUpon>ProdutoCadastroForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProdutoConsultaForm.resx">
+      <DependentUpon>ProdutoConsultaForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
