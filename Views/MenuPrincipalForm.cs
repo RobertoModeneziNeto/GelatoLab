@@ -109,5 +109,15 @@ namespace GelatoLab.Views
             UsuarioConsultaForm tela = new UsuarioConsultaForm();
             tela.ShowDialog();
         }
+
+        private void menuItemDesenvolvedores_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(
+                "Desenvolvido por:\n\nMurilo Turcato Piai\nRoberto Modenezi Neto\nLuiz Otávio Candil\nKerlon Roger Xavier",
+                "Informações do Desenvolvedor",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information
+            );
+        }
     }
 }
