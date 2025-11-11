@@ -10,9 +10,6 @@ namespace GelatoLab.Controllers
         // Conexão com o banco
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
 
-        // ============================================================
-        // INSERIR CATEGORIA
-        // ============================================================
         public int Inserir(Categoria categoria)
         {
             string query =
@@ -27,9 +24,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // ALTERAR CATEGORIA
-        // ============================================================
         public int Alterar(Categoria categoria)
         {
             string query =
@@ -48,9 +43,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // EXCLUIR CATEGORIA
-        // ============================================================
         public int Excluir(int idCategoria)
         {
             string query = "DELETE FROM Categoria WHERE IdCategoria = @IdCategoria";
@@ -61,9 +54,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // OBTER CATEGORIA POR ID
-        // ============================================================
         public Categoria GetById(int idCategoria)
         {
             string query =
@@ -89,17 +80,13 @@ namespace GelatoLab.Controllers
             return categoria;
         }
 
-        // ============================================================
         // OBTER TODAS
-        // ============================================================
         public CategoriaCollection GetAll()
         {
             return GetByFilter();
         }
 
-        // ============================================================
         // FILTRO GENÉRICO
-        // ============================================================
         public CategoriaCollection GetByFilter(string filtro = "")
         {
             string query = "SELECT * FROM Categoria";
@@ -130,17 +117,13 @@ namespace GelatoLab.Controllers
             return categorias;
         }
 
-        // ============================================================
         // CONSULTAR POR NOME
-        // ============================================================
         public CategoriaCollection GetByName(string value)
         {
             return GetByFilter($"Nome LIKE '%{value}%'");
         }
 
-        // ============================================================
         // CONSULTAR APENAS CATEGORIAS ATIVAS
-        // ============================================================
         public CategoriaCollection GetAtivas()
         {
             return GetByFilter("Ativo = 1");

@@ -21,7 +21,7 @@ namespace GelatoLab.Services
             //Nome do banco de dados
             //Autenticação (Usuario e Senha ou Autenticação do Windows)
             connection.ConnectionString =
-                "Data Source=DESKTOP-64RILEV\\SQLEXPRESS;" + //Nome do Servidor (RAPAZIADA MUDAR O NOME DO SERVIDOR AQUI)
+                "Data Source=DESKTOP-B3K4KKV\\MSSQLSERVER01;" + //Nome do Servidor (RAPAZIADA MUDAR O NOME DO SERVIDOR AQUI)
                 "Initial Catalog=GelatoLab;" + //Nome do Banco
                 "Integrated Security=SSPI;";// Autenticação pelo Windows
 
@@ -68,7 +68,6 @@ namespace GelatoLab.Services
             // Preenchendo o DataTable com os dados do banco
             sqlDataAdapter.Fill(dataTable);
 
-            // Retornando o DataTable preenchido
             return dataTable;
         }
 

@@ -71,10 +71,7 @@ namespace GelatoLab.Views
             LimparCampos();
         }
 
-        private void btnLimpar_Click(object sender, EventArgs e)
-        {
-            LimparCampos();
-        }
+     
 
         private void LimparCampos()
         {
@@ -101,5 +98,7 @@ namespace GelatoLab.Views
         {
             this.Close();
         }
+
+     
     }
 }

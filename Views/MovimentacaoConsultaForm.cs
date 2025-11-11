@@ -108,5 +108,7 @@ namespace GelatoLab.Views
             tela.CarregarMovimentacao(idMov);
             tela.ShowDialog();
         }
+
+     
     }
 }

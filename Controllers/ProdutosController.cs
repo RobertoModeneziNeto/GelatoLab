@@ -10,9 +10,7 @@ namespace GelatoLab.Controllers
         // Conexão com o banco de dados
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
 
-        // ============================================================
         // INSERIR PRODUTO
-        // ============================================================
         public int Inserir(Produtos produto)
         {
             string query =
@@ -31,9 +29,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // ALTERAR PRODUTO
-        // ============================================================
         public int Alterar(Produtos produto)
         {
             string query =
@@ -60,9 +56,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // EXCLUIR PRODUTO
-        // ============================================================
         public int Excluir(int idProduto)
         {
             string query = "DELETE FROM Produto WHERE IdProduto = @IdProduto";
@@ -73,9 +67,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // OBTER PRODUTO POR ID
-        // ============================================================
         public Produtos GetById(int idProduto)
         {
             string query =
@@ -121,17 +113,13 @@ namespace GelatoLab.Controllers
             return produto;
         }
 
-        // ============================================================
         // GET ALL
-        // ============================================================
         public ProdutosCollection GetAll()
         {
             return GetByFilter();
         }
 
-        // ============================================================
         // MÉTODO GENÉRICO COM FILTRO
-        // ============================================================
         public ProdutosCollection GetByFilter(string filtro = "")
         {
             string query =
@@ -180,17 +168,13 @@ namespace GelatoLab.Controllers
             return produtos;
         }
 
-        // ============================================================
         // CONSULTAR POR NOME
-        // ============================================================
         public ProdutosCollection GetByName(string value)
         {
             return GetByFilter($"p.Nome LIKE '%{value}%'");
         }
 
-        // ============================================================
         // CONSULTAR POR CÓDIGO DE BARRAS
-        // ============================================================
         public ProdutosCollection GetByCodBarras(string value)
         {
             return GetByFilter($"p.codBarras LIKE '%{value}%'");

@@ -10,9 +10,7 @@ namespace GelatoLab.Controllers
         // Acesso ao banco
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
 
-        // ============================================================
         // INSERIR FORNECEDOR
-        // ============================================================
         public int Inserir(Fornecedor fornecedor)
         {
             string query =
@@ -28,9 +26,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // ALTERAR FORNECEDOR
-        // ============================================================
         public int Alterar(Fornecedor fornecedor)
         {
             string query =
@@ -51,9 +47,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // EXCLUIR FORNECEDOR
-        // ============================================================
         public int Excluir(int idFornecedor)
         {
             string query =
@@ -65,9 +59,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // OBTER FORNECEDOR POR ID
-        // ============================================================
         public Fornecedor GetById(int idFornecedor)
         {
             string query =
@@ -94,17 +86,13 @@ namespace GelatoLab.Controllers
             return fornecedor;
         }
 
-        // ============================================================
         // OBTER TODOS
-        // ============================================================
         public FornecedorCollection GetAll()
         {
             return GetByFilter();
         }
 
-        // ============================================================
         // FILTRO GENÉRICO
-        // ============================================================
         public FornecedorCollection GetByFilter(string filtro = "")
         {
             string query = "SELECT * FROM Fornecedor";
@@ -136,17 +124,13 @@ namespace GelatoLab.Controllers
             return fornecedores;
         }
 
-        // ============================================================
         // CONSULTAR POR NOME
-        // ============================================================
         public FornecedorCollection GetByName(string value)
         {
             return GetByFilter($"Nome LIKE '%{value}%'");
         }
 
-        // ============================================================
         // CONSULTAR POR CNPJ
-        // ============================================================
         public FornecedorCollection GetByCnpj(string value)
         {
             return GetByFilter($"Cnpj LIKE '%{value}%'");

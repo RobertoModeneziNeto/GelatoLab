@@ -151,6 +151,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Views\CategoriaCadastroForm.resx">
       <DependentUpon>CategoriaCadastroForm.cs</DependentUpon>
@@ -204,6 +205,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\ChatGPT Image 9 de nov. de 2025, 22_00_29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagem_540x321.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -10,9 +10,7 @@ namespace GelatoLab.Controllers
     {
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
 
-        // ============================================================
         // INSERIR MOVIMENTAÇÃO (Entrada ou Saída)
-        // ============================================================
         public int Inserir(Movimentacoes mov)
         {
             string query =
@@ -35,9 +33,7 @@ namespace GelatoLab.Controllers
             return linhasAfetadas;
         }
 
-        // ============================================================
         // ATUALIZAR ESTOQUE APÓS MOVIMENTAÇÃO
-        // ============================================================
         private void AtualizarEstoque(Movimentacoes mov)
         {
             string sql = "";
@@ -64,9 +60,7 @@ namespace GelatoLab.Controllers
             dataBase.ExecuteSQL(cmd);
         }
 
-        // ============================================================
         // EXCLUIR MOVIMENTAÇÃO
-        // ============================================================
         public int Excluir(int idMovimentacao)
         {
             string query =
@@ -78,9 +72,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // OBTER POR ID
-        // ============================================================
         public Movimentacoes GetById(int idMovimentacao)
         {
             string query =
@@ -116,17 +108,13 @@ namespace GelatoLab.Controllers
             return mov;
         }
 
-        // ============================================================
         // GET ALL
-        // ============================================================
         public MovimentacoesCollection GetAll()
         {
             return GetByFilter();
         }
 
-        // ============================================================
         // FILTRO GENÉRICO
-        // ============================================================
         public MovimentacoesCollection GetByFilter(string filtro = "")
         {
             string query =
@@ -167,17 +155,13 @@ namespace GelatoLab.Controllers
             return list;
         }
 
-        // ============================================================
         // CONSULTAR POR TIPO (Entrada / Saída)
-        // ============================================================
         public MovimentacoesCollection GetByTipo(string tipo)
         {
             return GetByFilter($"m.Tipo = '{tipo}'");
         }
 
-        // ============================================================
         // CONSULTAR POR PRODUTO
-        // ============================================================
         public MovimentacoesCollection GetByProduto(int idProduto)
         {
             return GetByFilter($"m.IdProduto = {idProduto}");

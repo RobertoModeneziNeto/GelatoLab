@@ -12,9 +12,7 @@ namespace GelatoLab.Controllers
         // Objeto de acesso ao banco de dados
         DataBaseSqlServer dataBase = new DataBaseSqlServer();
 
-        // ============================================================
         // INSERIR USUÁRIO
-        // ============================================================
         public int Inserir(Usuario usuario)
         {
             string query =
@@ -30,9 +28,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // ALTERAR USUÁRIO
-        // ============================================================
         public int Alterar(Usuario usuario)
         {
             string query =
@@ -53,9 +49,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // EXCLUIR USUÁRIO
-        // ============================================================
         public int Excluir(int id)
         {
             string query = "DELETE FROM Usuario WHERE IdUsuario = @Id";
@@ -66,9 +60,7 @@ namespace GelatoLab.Controllers
             return dataBase.ExecuteSQL(command);
         }
 
-        // ============================================================
         // OBTER USUÁRIO POR ID
-        // ============================================================
         public Usuario GetById(int id)
         {
             string query =
@@ -92,17 +84,13 @@ namespace GelatoLab.Controllers
             return usuario;
         }
 
-        // ============================================================
         // OBTER TODOS OS USUÁRIOS
-        // ============================================================
         public UsuarioCollection GetAll()
         {
             return GetByFilter();
         }
 
-        // ============================================================
         // FILTRO GENÉRICO
-        // ============================================================
         public UsuarioCollection GetByFilter(string filtro = "")
         {
             string query = "SELECT * FROM Usuario";
@@ -134,25 +122,19 @@ namespace GelatoLab.Controllers
             return usuarios;
         }
 
-        // ============================================================
         // CONSULTAR POR NOME
-        // ============================================================
         public UsuarioCollection GetByName(string value)
         {
             return GetByFilter($"Nome LIKE '%{value}%'");
         }
 
-        // ============================================================
         // CONSULTAR POR LOGIN
-        // ============================================================
         public UsuarioCollection GetByLogin(string value)
         {
             return GetByFilter($"Login LIKE '%{value}%'");
         }
 
-        // ============================================================
         // LOGIN (autenticação)
-        // ============================================================
         public Usuario Login(string login, string senha)
         {
             string query =
